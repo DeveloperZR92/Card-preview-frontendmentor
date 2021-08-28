@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: var(--Verylightgray);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 150px 0;
+}
+
+/* cards */
+
+.card-one {
+  background-color: var(--Brightorange);
+  height: 350px;
+  width: 250px;
+  border-radius: 5px 0 0 5px;
+}
+
+.card-one img {
+  padding: 30px 0 10px 30px;
+}
+
+.card-two {
+  background-color: var(--Darkcyan);
+  height: 350px;
+  width: 250px;
+}
+
+.card-two img {
+  padding: 30px 0 10px 30px;
+}
+
+.card-three {
+  background-color: var(--Verydarkcyan);
+  height: 350px;
+  width: 250px;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-three img {
+  padding: 30px 0 10px 30px;
+}
+
+/* text */
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--Verylightgray);
+  padding: 10px 0px 0px 30px;
+}
+
+p {
+  color: var(--Transparentwhite);
+  padding: 10px 30px 0px 30px;
+}
+
+/* buttons  */
+.card-one button {
+  color: var(--Brightorange);
+  background-color: var(--Verylightgray);
+  padding: 10px;
+  margin: 30px;
+  border-radius: 40px;
+  width: 130px;
+  border: none;
+}
+
+.card-two button {
+  color: var(--Darkcyan);
+  background-color: var(--Verylightgray);
+  padding: 10px;
+  margin: 50px;
+  border-radius: 40px;
+  width: 130px;
+  border: none;
+}
+
+.card-three button {
+  color: var(--Verydarkcyan);
+  background-color: var(--Verylightgray);
+  padding: 10px;
+  margin: 30px;
+  border-radius: 40px;
+  width: 130px;
+  border: none;
+}
+
+/* responsive */
+@media (min-width: 0) and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-one {
+    background-color: var(--Brightorange);
+    height: 350px;
+    width: 250px;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .card-three {
+    background-color: var(--Verydarkcyan);
+    height: 350px;
+    width: 250px;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .card-three {
+    background-color: var(--Verydarkcyan);
+    height: 350px;
+    width: 250px;
+    border-radius: 0 0px 5px 5px;
+  }
+}
